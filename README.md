@@ -45,3 +45,34 @@ npm start(to start project)
 
 ### Components & Workflow
 ## State & Props
+
+### State => Data required for a components
+
+<!-- var name = 'DevTown' -->
+<!-- State = {
+    [
+        {
+
+        },
+        {
+
+        }
+    ]
+}-->
+
+## Hooks --> useState(),SetState()
+
+import {usestate} from 'react';
+const [variable, func] = usestate();
+e.g --> const [count, setCount] = useState();
+
+const [num, setNum] = useState(5);
+num += 1;
+
+btn =>
+
+### Props (Where we will be passing data among the components)
+## Parent Nodee --> Child Node
+## eg. App.js -> ClassComponent.jsx | FunctionComponent.jsx
+
+<FunctionComponent name='DevTown' age={25}>
