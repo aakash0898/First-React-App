@@ -78,4 +78,45 @@ btn =>
 <FunctionComponent name='DevTown' age={25}>
 
 
-Routing and Layouts in ReactJs
+## Routing and Layouts in ReactJs
+Router >> Routes >> Route
+/contact /aboutus /signin /signup
+
+npm i react-router-dom
+
+workflow wrt routes
+>> index.js (Browser Router) >> App.js >> diff routes
+
+
+## Workflow index,js >> app.js >> pages
+
+
+//webpage
+>> /contact /aboutus /signin /signup
+
+Layouts (HOC || High Order Component)
+/ParentSignInAndUp
+>> Nav and Footer
+
+<!-- HOC's can add additional info/features to the existing components-->
+
+## React lifecycle method
+render(){
+}
+
+CDM(component did mount)
+componentDidMount(){
+    
+}
+
+1 web page >> 4 components >> rest 2 components
+
+componentDidUpdate(){
+    input tab => enter
+}
+
+componentWillUnmount(){
+
+}
+
+# useEffect
