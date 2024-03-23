@@ -76,3 +76,6 @@ btn =>
 ## eg. App.js -> ClassComponent.jsx | FunctionComponent.jsx
 
 <FunctionComponent name='DevTown' age={25}>
+
+
+Routing and Layouts in ReactJs
