@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 
-const FunctionComponent = (props) => {
+const FunctionComponent = ({name, age, author, setName}) => {
     const [count, setCount] = useState(0);
+    const [changeName, setChangeName] = useState("");
     const reduceCount = () =>{
         setCount(count-1)
     }
@@ -13,8 +14,10 @@ const FunctionComponent = (props) => {
             <button onClick = {()=>setCount(count+1)}>click me to increment by 1</button>
             <button onClick={reduceCount}> Click to decrement by 1</button>
             <h2>{count}</h2>
-            <h4> My Name is: {props.name} age {props.age} nickName {props.author}</h4>
-            <button onClick={()=> props.setName("Aakash Singh")}>Change name</button>
+            <h4> My Name is: {name} age {age} nickName {author}</h4>
+            <input onChange={(e)=> setChangeName(e.target.value)} />
+            {/*<button onClick={()=> props.setName(changeName)}>Change name</button>*/}
+            <button onClick={()=> setName(changeName)}>Change name to....</button>
         </div>
     )
 }
